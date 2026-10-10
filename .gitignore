@@ -1,0 +1,34 @@
+# 编译产物
+*.o
+*.d
+*.a
+*.so
+*.out
+a.out
+core
+core.*
+
+# 编辑器 / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# 构建目录
+build/
+output/
+
+# 内核 / 嵌入式临时产物
+*.ko
+*.mod
+*.mod.c
+*.order
+*.symvers
+Module.symvers
+modules.order
+.tmp_versions/
+
+# QEMU / Buildroot
+buildroot/
+qemu-*/
+*.img

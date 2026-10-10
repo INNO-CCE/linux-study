@@ -18,6 +18,13 @@ core.*
 build/
 output/
 
+# 练习目录：只跟踪源码与说明，忽略编译出来的可执行文件
+# 注意：这条规则会让 c-basics 下的非源码文件默认被忽略，需要时用 git add -f
+/c-basics/*
+!/c-basics/*.c
+!/c-basics/*.h
+!/c-basics/*.md
+
 # 内核 / 嵌入式临时产物
 *.ko
 *.mod

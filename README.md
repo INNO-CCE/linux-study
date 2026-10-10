@@ -1,9 +1,9 @@
 # 嵌入式 Linux 三年学习与求职规划
 
-> 适用对象：信息工程本科、电子信息工程专硕，有 C 语言和单片机基础，研一，目标嵌入式 Linux 开发。
-> 实验室背景：方向以 ZYNQ 为主，导师无具体指导，基本靠自学。
-> 规划起点：2026 年 10 月 10 日。
-> 时间假设：三年制专硕，2029 年 6 月毕业，2028 年秋招。
+- 适用对象：信息工程本科、电子信息工程专硕，有 C 语言和单片机基础，研一，目标嵌入式 Linux 开发。
+- 实验室背景：方向以 ZYNQ 为主，导师无具体指导，基本靠自学。
+- 规划起点：2026 年 10 月 10 日。
+- 时间假设：三年制专硕，2029 年 6 月毕业，2028 年秋招。
 
 ---
 
@@ -61,8 +61,8 @@ ZYNQ 软硬协同加边缘 AI。实验室方向是 ZYNQ，它天然覆盖了 ARM
 
 ## 4. 研一上：2026.10—2027.1
 
-本阶段唯一目标：把 C、Linux 系统编程、工程工具链变成本能，并在 QEMU 上跑通自己的第一个内核模块。
-本阶段不要做的事：不要买 ZYNQ 板、不要装 PetaLinux、不要碰 Yocto。
+- 本阶段唯一目标：把 C、Linux 系统编程、工程工具链变成本能，并在 QEMU 上跑通自己的第一个内核模块。
+- 本阶段不要做的事：不要买 ZYNQ 板、不要装 PetaLinux、不要碰 Yocto。
 
 ### 2026.10：工具链与 C 进阶
 
@@ -83,7 +83,7 @@ ZYNQ 软硬协同加边缘 AI。实验室方向是 ZYNQ，它天然覆盖了 ARM
 
 ### 2026.11：Linux 系统编程
 
-- 文件 I/O：open/read/write/lseek/close、FILE* 与 fd 的关系、缓冲、errno 与 perror、umask
+- 文件 I/O：open/read/write/lseek/close、`FILE*` 与 fd 的关系、缓冲、errno 与 perror、umask
 - 进程：fork/exec/wait、写时复制、僵尸进程与孤儿进程
 - 线程：pthread、互斥锁、条件变量、生产者消费者
 - 进程间通信：pipe/FIFO、共享内存加信号量、消息队列、mmap
@@ -209,8 +209,8 @@ C++ 开始每日并行。学法是唤醒加补齐，不要读《C++ Primer》全
 - Documentation 修正错误、drivers/staging 修编译警告和 checkpatch 问题、设备树补节点
 - 或门槛更友好的项目：U-Boot、Buildroot、Zephyr、RT-Thread、LVGL、FFmpeg
 
-节奏：每月 1 个补丁。第一个补丁花 2 个月很正常，第二个就快了。
-前置技能：git rebase、format-patch、send-email，读懂 MAINTAINERS，会用 checkpatch.pl。
+- 节奏：每月 1 个补丁。第一个补丁花 2 个月很正常，第二个就快了。
+- 前置技能：git rebase、format-patch、send-email，读懂 MAINTAINERS，会用 checkpatch.pl。
 
 ### 内核源码阅读
 
@@ -221,7 +221,7 @@ C++ 开始每日并行。学法是唤醒加补齐，不要读《C++ Primer》全
 | 9 月 | open() → sys_open → do_sys_open → vfs_open |
 | 10 月 | read/write 的 VFS 路径与字符设备 file_operations |
 | 11 月 | module_init 到模块注册的完整链路 |
-| 12 月 | platform_driver_register 与设备树 of_* 解析 |
+| 12 月 | platform_driver_register 与设备树 `of_*` 解析 |
 | 1 月 | I2C 子系统或中断子系统，挑一个 |
 
 ### 准备大厂暑期实习
@@ -371,7 +371,7 @@ UART、I2C、SPI、CAN、USB、TCP/IP。
 
 不要设天花板，要设底线。
 
-| | 内容 |
+| 项 | 内容 |
 | :-- | :-- |
 | 底线（雷打不动） | 每天 1 小时，状态再差也要做。做不到就第二天补，不允许连续两天为零 |
 | 弹性（上不封顶） | 状态好、周末、没课的时候做 4—8 小时，不设上限 |
@@ -484,7 +484,7 @@ ARM 与硬件
 
 ### C 与语言层
 
-- swap(void*, void*, size_t) 怎么实现？为什么需要 size_t？
+- `swap(void*, void*, size_t)` 怎么实现？为什么需要 size_t？
 - 结构体对齐规则？struct {char c; int i; double d;} 的 sizeof 是多少，为什么？
 - 函数指针数组怎么用于实现状态机或驱动 ops 表？
 - volatile 在驱动里解决什么问题？它不解决什么问题？
